@@ -1,0 +1,890 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Sparlex - Spa Website Template</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="" name="keywords">
+        <meta content="" name="description">
+
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=PT+Serif:wght@400;700&display=swap" rel="stylesheet"> 
+
+        <!-- Icon Font Stylesheet -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+        <!-- Libraries Stylesheet -->
+        <link href="lib/animate/animate.min.css" rel="stylesheet">
+        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <!-- Spinner Start -->
+        <div id="spinner" class="show w-100 vh-100 bg-white position-fixed translate-middle top-50 start-50  d-flex align-items-center justify-content-center">
+            <div class="spinner-grow text-primary" role="status"></div>
+        </div>
+        <!-- Spinner End -->
+
+
+        <!-- Navbar start -->
+        <div class="container-fluid sticky-top px-0">
+            <div class="container-fluid topbar d-none d-lg-block">
+                <div class="container px-0">
+                    <div class="row align-items-center">
+                        <div class="col-lg-8">
+                            <div class="d-flex flex-wrap">
+                                <a href="#" class="me-4 text-light"><i class="fas fa-map-marker-alt text-primary me-2"></i>Find A Location</a>
+                                <a href="#" class="me-4 text-light"><i class="fas fa-phone-alt text-primary me-2"></i>+91 9551950095</a>
+                                <a href="#" class="text-light"><i class="fas fa-envelope text-primary me-2"></i>babudeluxe9545@gmail.com </a>
+                            </div>
+
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="d-flex align-items-center justify-content-end">
+                                <a href="#" class="me-3 btn-square border rounded-circle nav-fill"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#" class="me-3 btn-square border rounded-circle nav-fill"><i class="fab fa-twitter"></i></a>
+                                <a href="#" class="me-3 btn-square border rounded-circle nav-fill"><i class="fab fa-instagram"></i></a>
+                                <a href="#" class="btn-square border rounded-circle nav-fill"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid bg-dark" >
+                <div class="container px-0">
+                    <nav class="navbar navbar-light navbar-expand-xl">
+                        <a href="index.html" class="navbar-brand">
+                            <img   class="img-fluid"  src="img/logo.jpg">
+                            <!-- <h1 class="text-primary display-4">Sparlex</h1> -->
+                        </a>
+                        <button class="navbar-toggler py-2 px-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                            <span class="fa fa-bars text-white"></span>
+                        </button>
+                        <div class="collapse navbar-collapse bg-light py-3" id="navbarCollapse">
+                            <div class="navbar-nav mx-auto border-top">
+                                <a href="index.html" class="nav-item nav-link active">Home</a>
+                                <a href="about.html" class="nav-item nav-link">About</a>
+                                <a href="service.html" class="nav-item nav-link">Services</a>
+                                <a href="gallery.html" class="nav-item nav-link">Gallery</a>
+
+                                <!-- <div class="nav-item dropdown">
+                                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                                    <div class="dropdown-menu m-0 bg-secondary rounded-0">
+                                        <a href="team.html" class="dropdown-item">Team</a>
+                                        <a href="testimonial.html" class="dropdown-item">Testimonial</a>
+                                        <a href="gallery.html" class="dropdown-item">Gallery</a>
+                                        <a href="appointment.html" class="dropdown-item">Appointment</a>
+                                        <a href="404.html" class="dropdown-item">404 page</a>
+                                    </div>
+                                </div> -->
+                                <a href="contact.html" class="nav-item nav-link">Contact Us</a>
+                            </div>
+                            <!--<div class="d-flex align-items-center flex-nowrap pt-xl-0">
+                                <button class="btn-search btn btn-primary btn-primary-outline-0 rounded-circle btn-lg-square" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fas fa-search"></i></button>
+                                <a href="appointment.html" class="btn btn-primary btn-primary-outline-0 rounded-pill py-3 px-4 ms-4">Book Appointment</a>
+                            </div>-->
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <!-- Navbar End -->
+
+
+        <!-- Modal Search Start -->
+        <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content rounded-0">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Search by keyword</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body d-flex align-items-center">
+                        <div class="input-group w-75 mx-auto d-flex">
+                            <input type="search" class="form-control p-3" placeholder="keywords" aria-describedby="search-icon-1">
+                            <span id="search-icon-1" class="input-group-text p-3"><i class="fa fa-search"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal Search End -->
+
+
+
+        <!-- Header Start -->
+        <div class="container-fluid bg-breadcrumb py-5">
+            <div class="container text-center py-5">
+                <h3 class="text-white display-3 mb-4">Our Services</h1>
+                <ol class="breadcrumb justify-content-center mb-0">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item"><a href="#">Pages</a></li>
+                    <li class="breadcrumb-item active text-white">Service Page</li>
+                </ol>    
+            </div>
+        </div>
+        <!-- Header End -->
+
+        
+        <!-- Services Start -->
+        <div class="container-fluid services py-5">
+            <div class="container py-5">
+                <div class="mx-auto text-center mb-5" style="max-width: 800px;">
+                    <p class="fs-4 text-uppercase text-center text-primary">Our Service</p>
+                    <h1 class="display-3">Beauty Services</h1>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-6">
+                        <div class="services-item bg-light border-4 border-end border-primary rounded p-4">
+                            <div class="row align-items-center">
+                                <div class="col-8">
+                                    <div class="services-content text-start">
+                                        <h3 class="d-flex justify-content-between">HAIR CUTS  </h3>
+                                           
+                                     <p> <font color="#CFB53B">Basic Hair Cut</font>
+                                        <span class="mr-3" style="margin-left: 220px;"><strong style="color: #CFB53B;">400/-</strong></span>
+                                        <br>
+                                        (Hair wash , Shampoo, Conditioner)  </p>
+
+                                        <p> <font color="#CFB53B">Advance Hair Cut</font>
+                                            <span class="mr-3" style="margin-left: 200px;"><strong style="color: #CFB53B;">600/-</strong></span>
+                                            <br>
+                                            (Hair wash , Shampoo, Conditioner)  </p>  
+                                            <p> <font color="#CFB53B">Creative Hair Cut</font>
+                                                <span class="mr-3" style="margin-left: 200px;"><strong style="color: #CFB53B;">400/-</strong></span>
+                                                <br>
+                                                (Hair wash , Shampoo, Conditioner)  </p>  
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="services-img d-flex align-items-center justify-content-center rounded">
+                                        <img src="img/hair.jpg" class="img-fluid rounded" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="services-item bg-light border-4 border-start border-primary rounded p-4">
+                            <div class="row align-items-center">
+                                <div class="col-4">
+                                    <div class="services-img d-flex align-items-center justify-content-center rounded">
+                                        <img src="img/blowdry.jfif" class="img-fluid rounded" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-8">
+                                    <div class="services-content text-start">
+                                        <h3>BLOW DRY</h3>
+                                        <p> <font color="#CFB53B">Wash &Blow Dry</font>
+                                            <span class="mr-3" style="margin-left: 200px;"><strong style="color: #CFB53B;">300/-</strong></span>
+                                            <br>
+                                            (Hair wash , Shampoo, Conditioner)  </p>  
+                                            <p> <font color="#CFB53B">Incurl/Outcurl</font>
+                                                <span class="mr-3" style="margin-left: 220px;"><strong style="color: #CFB53B;">400/-</strong></span>
+                                                <br>
+                                                (Hair wash , Shampoo, Conditioner)  </p> 
+                                                
+                                                <p class=" p-2"> <font color="#343a40"></font>
+                                                    <span class="mr-3" style="margin-left: 220px;"><strong></strong></span>
+                                                    <br>
+                                                      </p>     
+                                                    
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="services-item bg-light border-4 border-end border-primary rounded p-4">
+                            <div class="row align-items-center">
+                                <div class="col-8">
+                                    <div class="services-content text-start">
+                                        <h3>IRONING</h3>
+                                        <p style="display: flex; justify-content: space-between; color: #CFB53B;">
+                                            <span>Shoulder Length</span>
+                                            <span><strong>500/-</strong></span>
+                                        </p>
+                                        <p style="display: flex; justify-content: space-between; color: #CFB53B;">
+                                            <span>Extra Long</span>
+                                            <span><strong>700/-</strong></span>
+                                        </p>
+                                          
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="services-img d-flex align-items-center justify-content-center rounded">
+                                        <img src="img/iron.jfif" class="img-fluid rounded" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="services-item bg-light border-4 border-start border-primary rounded p-4">
+                            <div class="row align-items-center">
+                                <div class="col-4">
+                                    <div class="services-img d-flex align-items-center justify-content-center rounded">
+                                        <img src="img/tonner.jfif" class="img-fluid rounded" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-8">
+                                    <div class="services-content text-start">
+                                        <h3>TONING</h3>
+                                        <p style="display: flex; justify-content: space-between; color: #CFB53B;">
+                                            <span>Shoulder Length</span>
+                                            <span><strong>500/-</strong></span>
+                                        </p>
+                                        <p style="display: flex; justify-content: space-between; color: #CFB53B;">
+                                            <span>Extra Long</span>
+                                            <span><strong>700/-</strong></span>
+                                        </p>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="services-item bg-light border-4 border-end border-primary rounded p-4">
+                            <div class="row align-items-center">
+                                <div class="col-8">
+                                    <div class="services-content text-start">
+                                        <h3>HAIR COLOUR GLOBAL</h3>
+                                        <p style="display: flex; justify-content: space-between; color: #CFB53B;">
+                                            <span>Bob Length</span>
+                                            <span><strong>1800/-</strong></span>
+                                        </p>
+                                        <p style="display: flex; justify-content: space-between; color: #CFB53B;">
+                                            <span>Shoulder Length</span>
+                                            <span><strong>2499/-</strong></span>
+                                        </p>
+                                        <p style="display: flex; justify-content: space-between; color: #CFB53B;">
+                                            <span>Extra Long</span>
+                                            <span><strong>2999/-</strong></span>
+                                        </p>
+                                        
+                                                
+                                                 
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="services-img d-flex align-items-center justify-content-center rounded">
+                                        <img src="img/glo.jfif" class="img-fluid rounded" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="services-item bg-light border-4 border-start border-primary rounded p-4">
+                            <div class="row align-items-center">
+                                <div class="col-4">
+                                    <div class="services-img d-flex align-items-center justify-content-center rounded">
+                                        <img src="img/spa.jfif" class="img-fluid rounded" alt=""> 
+                                    </div>
+                                </div>
+                                <div class="col-8">
+                                    <div class="services-content text-start">
+                                         <h3>HAIR SPA</h3>
+                                        <p style="display: flex; justify-content: space-between; color: #CFB53B;">
+                                            <span> Hair & Spa</span>
+                                            <span><strong>999/-</strong></span>
+                                        </p>
+                                        <p style="display: flex; justify-content: space-between; color: #CFB53B;">
+                                            <span>Adnvance Hair Spa</span>
+                                            <span><strong>1499/-</strong></span>
+                                        </p>
+                                        <p style="display: flex; justify-content: space-between; color: #CFB53B;">
+                                            <span>Kertain Hair Spa</span>
+                                            <span><strong>1999/-</strong></span>
+                                        </p>
+                                        
+                                        
+                                       
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="services-item bg-light border-4 border-end border-primary rounded p-4">
+                            <div class="row align-items-center">
+                                <div class="col-8">
+                                    <div class="services-content text-start">
+                                        <h3>HAIR COLOUR GLOBAL</h3>
+                                        <p style="display: flex; justify-content: space-between; color: #CFB53B;">
+                                            <span>Bob Length</span>
+                                            <span><strong>2499/-</strong></span>
+                                        </p>
+                                        <p style="display: flex; justify-content: space-between; color: #CFB53B;">
+                                            <span>Shoulder Length</span>
+                                            <span><strong>2999/-</strong></span>
+                                        </p>
+                                        <p style="display: flex; justify-content: space-between; color: #CFB53B;">
+                                            <span>Below Shoulder</span>
+                                            <span><strong>3499/-</strong></span>
+                                        </p>
+                                        <p style="display: flex; justify-content: space-between; color: #CFB53B;">
+                                            <span>Extra Long</span>
+                                            <span><strong>4499/-</strong></span>
+                                        </p>
+                                        <p style="display: flex; justify-content: space-between; color: #CFB53B;">
+                                            <span>Balayage Hair Colour</span>
+                                            <span><strong>4999/-</strong></span>
+                                        </p>
+                                        
+                                       
+                                                 
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="services-img d-flex align-items-center justify-content-center rounded">
+                                        <img src="img/hairglob.jfif" class="img-fluid rounded" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="services-item bg-light border-4 border-start border-primary rounded p-4">
+                            <div class="row align-items-center">
+                                <div class="col-4">
+                                    <div class="services-img d-flex align-items-center justify-content-center rounded">
+                                        
+                                        <img src="img/hilight.jfif" class="img-fluid rounded" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-8">
+                                    <div class="services-content text-start"><h3>HIGHLIGHT</h3>
+                                        <p style="display: flex; justify-content: space-between; color: #CFB53B;">
+                                            <span>Crown</span>
+                                            <span><strong>1000/-</strong></span>
+                                        </p>
+                                        <p style="display: flex; justify-content: space-between; color: #CFB53B;">
+                                            <span>Half head</span>
+                                            <span><strong>1499/-</strong></span>
+                                        </p>
+                                        <p style="display: flex; justify-content: space-between; color: #CFB53B;">
+                                            <span>Full head</span>
+                                            <span><strong>2499/-</strong></span>
+                                        </p>
+                                        <p style="display: flex; justify-content: space-between; color: #CFB53B;">
+                                            <span>Creative head</span>
+                                            <span><strong>2999/-</strong></span>
+                                        </p>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="services-item bg-light border-4 border-end border-primary rounded p-4">
+                            <div class="row align-items-center">
+                                <div class="col-8">
+                                    <div class="services-content text-start">
+                                        <h3>HAIR HEAD MASSAGE</h3>
+                                        <p style="display: flex; justify-content: space-between; color: #CFB53B;">
+                                            <span> Coconut (20 Min.)</span>
+                                            <span><strong>300/-</strong></span>
+                                        </p>
+                                        <p style="display: flex; justify-content: space-between; color: #CFB53B;">
+                                            <span>Aroma / Olive (30 Min.)</span>
+                                            <span><strong>500/-</strong></span>
+                                        </p>
+                                       
+                                        
+                                       
+                                                 
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="services-img d-flex align-items-center justify-content-center rounded">
+                                        <img src="img/massag.jfif" class="img-fluid rounded" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="services-item bg-light border-4 border-start border-primary rounded p-4">
+                            <div class="row align-items-center">
+                                <div class="col-4">
+                                    <div class="services-img d-flex align-items-center justify-content-center rounded">
+                                        
+                                        <img src="img/staignning.jfif" class="img-fluid rounded" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-8">
+                                    <div class="services-content text-start"><h3>HAIR STRAIGHTINING</h3>
+                                        <p style="display: flex; justify-content: space-between; color: #CFB53B;">
+                                            <span> Crown Area</span>
+                                            <span><strong>2499/-</strong></span>
+                                        </p>
+                                        <p style="display: flex; justify-content: space-between; color: #CFB53B;">
+                                            <span>Shoulder Length</span>
+                                            <span><strong>3999/-</strong></span>
+                                        </p>
+                                        <p style="display: flex; justify-content: space-between; color: #CFB53B;">
+                                            <span>Below Shoulder</span>
+                                            <span><strong>5999/-</strong></span>
+                                        </p>
+                                        <p style="display: flex; justify-content: space-between; color: #CFB53B;">
+                                            <span>Upto Waist </span>
+                                            <span><strong>7500/-</strong></span>
+                                        </p>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="services-item bg-light border-4 border-end border-primary rounded p-4">
+                            <div class="row align-items-center">
+                                <div class="col-8">
+                                    <div class="services-content text-start">
+                                        <h3>HAIR TREATMENT</h3>
+                                        <p style="display: flex; justify-content: space-between; color: #CFB53B;">
+                                            <span>Kertain </span>
+                                            <span><strong>3500/- to 4500/-</strong></span>
+                                        </p>
+                                        <p style="display: flex; justify-content: space-between; color: #CFB53B;">
+                                            <span>Botox Treatment</span>
+                                            <span><strong>4999/-</strong></span>
+                                        </p>
+                                        <p style="display: flex; justify-content: space-between; color: #CFB53B;">
+                                            <span>Blue - Tox</span>
+                                            <span><strong>5499/-</strong></span>
+                                        </p>
+                                        <p style="display: flex; justify-content: space-between; color: #CFB53B;">
+                                            <span>Nanoplastia Hair Treatment </span>
+                                            <span><strong>7000/- to 8999/-</strong></span>
+                                        </p>
+                                        <p style="display: flex; justify-content: space-between; color: #CFB53B;">
+                                            <span>Nanoplastia Hair Treatment </span>
+                                            <span><strong>7500/-</strong></span>
+                                        </p>
+                                        
+                                       
+                                                 
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="services-img d-flex align-items-center justify-content-center rounded">
+                                        <img src="img/DIFFERENT-TYPES-OF-HAIR-TREATMENTS.jpg" class="img-fluid rounded" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="services-item bg-light border-4 border-start border-primary rounded p-4">
+                            <div class="row align-items-center">
+                                <div class="col-4">
+                                    <div class="services-img d-flex align-items-center justify-content-center rounded">
+                                        
+                                        <img src="img/hairfall.jfif" class="img-fluid rounded" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-8">
+                                    <div class="services-content text-start"><h3>HAIR FALL TREATMENT</h3>
+                                        <p style="display: flex; justify-content: space-between; color: #CFB53B;">
+                                            <span> Lorial -  Absolut Repair Moleculer</span>
+                                            <span><strong>2499/-</strong></span>
+                                        </p>
+                                        <p style="display: flex; justify-content: space-between; color: #CFB53B;">
+                                            <span>Ola Plex Treatment</span>
+                                            <span><strong>2499/-</strong></span>
+                                        </p>
+                                        <p style="display: flex; justify-content: space-between; color: #CFB53B;">
+                                            <span>Rahut Phate’s Hair Fall</span>
+                                            <span><strong>2499/-</strong></span>
+                                        </p>
+                                        
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="services-item bg-light border-4 border-end border-primary rounded p-4">
+                            <div class="row align-items-center">
+                                <div class="col-8">
+                                    <div class="services-content text-start">
+                                        <h3>THREADING</h3>
+                                        <p style="display: flex; justify-content: space-between; color: #CFB53B;">
+                                            <span> Eye Brows</span>
+                                            <span><strong>50/-</strong></span>
+                                        </p>
+                                        <p style="display: flex; justify-content: space-between; color: #CFB53B;">
+                                            <span>Frorehead</span>
+                                            <span><strong>/-</strong></span>
+                                        </p>
+                                        <p style="display: flex; justify-content: space-between; color: #CFB53B;">
+                                            <span>Full Face Threadingr</span>
+                                            <span><strong>/-</strong></span>
+                                        </p>
+                                       
+                                        
+                                       
+                                                 
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="services-img d-flex align-items-center justify-content-center rounded">
+                                        <img src="img/threading.jfif" class="img-fluid rounded" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-lg-6">
+                        <div class="services-item bg-light border-4 border-start border-primary rounded p-4">
+                            <div class="row align-items-center">
+                                <div class="col-4">
+                                    <div class="services-img d-flex align-items-center justify-content-center rounded">
+                                        
+                                        <img src="img/wax.jfif" class="img-fluid rounded" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-8">
+                                    <div class="services-content text-start">
+                                        <h3>WAXING</h3>
+                                        <p style="display: flex; justify-content: space-between; color: #CFB53B;">
+                                            <span></span>
+                                            <span>&nbsp;&nbsp;&nbsp;&nbsp;Regular</span>
+                                            <span>Ricawax</span>
+                                        </p>
+                                        <div style="display: flex; justify-content: space-between; padding: 5px 0;">
+                                            <span><font color="CFB53B">Full Hand</font></span>
+                                            <span><font color="CFB53B"><strong>250/-</strong></font></span>
+                                            <span><font color="CFB53B"><strong>400/-</strong></font></span>
+                                        </div>
+                                        <div style="display: flex; justify-content: space-between; padding: 5px 0;">
+                                            <span><font color="CFB53B">Half Legs</font></span>
+                                            <span><font color="CFB53B"><strong>250/-</strong></font></span>
+                                            <span><font color="CFB53B"><strong>450/-</strong></font></span>
+                                        </div>
+                                        <div style="display: flex; justify-content: space-between; padding: 5px 0;">
+                                            <span><font color="CFB53B">Full Legs</font></span>
+                                            <span><font color="CFB53B"><strong>500/-</strong></font></span>
+                                            <span><font color="CFB53B"><strong>1000/-</strong></font></span>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- <div class="services-content text-start"><h3>WAXING</h3>
+                                        <p style="display: flex; justify-content: space-between; color: #343a40;">
+                                            <span></span>
+                                            <span>Regular</span>
+                                            <span>Ricawax</span>
+                                            
+                                        </p>
+                                        <p style="display: flex; justify-content: space-between; color: #343a40;">
+                                            <span> Full Hand</span>
+                                            <span><strong>250/-</strong></span>
+                                            <span><strong>400/-</strong></span>
+                                        </p>
+                                        <p style="display: flex; justify-content: space-between; color: #343a40;">
+                                            <span>Half Legs</span>
+                                            <span><strong>250/-</strong></span>
+                                            <span><strong>450/-</strong></span>
+                                        </p>
+                                        <p style="display: flex; justify-content: space-between; color: #343a40;">
+                                            <span>Full Legs</span>
+                                            <span><strong>500/-</strong></span>
+                                            <span><strong>1000/-</strong></span>
+                                        </p>
+                                        
+                                    </div> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="services-item bg-light border-4 border-end border-primary rounded p-4">
+                            <div class="row align-items-center">
+                                <div class="col-8">
+                                    <div class="services-content text-start">
+                                        <h3>CLEAN-UP</h3>
+                                        <p style="display: flex; justify-content: space-between; color: #CFB53B;">
+                                            <span>Insta Glow Clean-up</span>
+                                            <span><strong>700/-</strong></span>
+                                        </p>
+                                        <p style="display: flex; justify-content: space-between; color: #CFB53B;">
+                                            <span>Whitening Clean-up</span>
+                                            <span><strong>900/-</strong></span>
+                                        </p>
+                                       
+                                        
+                                       
+                                                 
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="services-img d-flex align-items-center justify-content-center rounded">
+                                        <img src="img/cleanup.jfif" class="img-fluid rounded" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="services-item bg-light border-4 border-start border-primary rounded p-4">
+                            <div class="row align-items-center">
+                                <div class="col-4">
+                                    <div class="services-img d-flex align-items-center justify-content-center rounded">
+                                        
+                                        <img src="img/facial.jfif" class="img-fluid rounded" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-8">
+                                    <div class="services-content text-start"><h3>BASIC FACIAL</h3>
+                                        <p style="display: flex; justify-content: space-between; color: #CFB53B;">
+                                            <span> Lotus Herbals</span>
+                                            <span><strong>800/-</strong></span>
+                                        </p>
+                                        <p style="display: flex; justify-content: space-between; color: #CFB53B;">
+                                            <span>Whitening </span>
+                                            <span><strong>999/-</strong></span>
+                                        </p>
+                                       
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-6">
+                        <div class="services-item bg-light border-4 border-end border-primary rounded p-4">
+                            <div class="row align-items-center">
+                                <div class="col-8">
+                                    <div class="services-content text-start">
+                                        <h3>ADVANCE FACIAL</h3>
+                                        <p style="display: flex; justify-content: space-between; color: #CFB53B;">
+                                            <span> Lotus Professional (Preservita)Skin whitening</span>
+                                            <span><strong>2499/-</strong></span>
+                                        </p>
+                                        <p style="display: flex; justify-content: space-between; color: #CFB53B;">
+                                            <span>Kanpeki Skin whitening</span>
+                                            <span><strong>2499/-</strong></span>
+                                        </p>
+                                        <p style="display: flex; justify-content: space-between; color: #CFB53B;">
+                                            <span>O3+ Radiance Bighteing</span>
+                                            <span><strong>2499/-</strong></span>
+                                        </p>
+                                        <p style="display: flex; justify-content: space-between; color: #CFB53B;">
+                                            <span>O3+ Bridal Vitamin ‘C’</span>
+                                            <span><strong>2999/-</strong></span>
+                                        </p>
+                                        <p style="display: flex; justify-content: space-between; color: #CFB53B;">
+                                            <span>O3+ Bridal Radiant</span>
+                                            <span><strong>3499/-</strong></span>
+                                        </p>
+                                        
+                                        <p> <font color="#CFB53B">Lotus Aaltimo</font>
+                                            <span class="mr-3" style="margin-left: 200px;"><strong style="color: #CFB53B;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3699/-</strong></span>
+                                            <br>
+                                            Gold 24 karat Facial  </p> 
+                                            <p style="display: flex; justify-content: space-between; color: #CFB53B;">
+                                                <span>O3+ Gold Facial</span>
+                                                <span><strong>3999/-</strong></span>
+                                            </p> 
+                                            <p> <font color="#CFB53B">Rahul Phate’s</font>
+                                                <span class="mr-3" style="margin-left: 200px;"><strong style="color: #CFB53B;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4000/-</strong></span>
+                                                <br>
+                                                24 karat Facial  </p> 
+                                       
+                                                 
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="services-img d-flex align-items-center justify-content-center rounded">
+                                        <img src="img/advanceface.jfif" class="img-fluid rounded" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="services-item bg-light border-4 border-start border-primary rounded p-4">
+                            <div class="row align-items-center">
+                                <div class="col-4">
+                                    <div class="services-img d-flex align-items-center justify-content-center rounded">
+                                        
+                                        <img src="img/acne.jfif" class="img-fluid rounded" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-8">
+                                    <div class="services-content text-start"><h3>SKIN TREATMENT</h3>
+                                        <p style="display: flex; justify-content: space-between; color: #CFB53B;">
+                                            <span> Acen Pimple</span>
+                                            <span><strong>1199/-</strong></span>
+                                        </p>
+                                        <p style="display: flex; justify-content: space-between; color: #CFB53B;">
+                                            <span>Anti Ageing</span>
+                                            <span><strong>1499/-</strong></span>
+                                        </p>
+                                        <p style="display: flex; justify-content: space-between; color: #CFB53B;">
+                                            <span>Skin Peeling Treatment</span>
+                                            <span><strong>1999/-</strong></span>
+                                            
+                                        </p>
+                                       <strong> (Micro Derma, Whitening, AHA,
+                                            BHA, Skin Clear Peel)</strong>
+                                        <p style="display: flex; justify-content: space-between; color: #CFB53B;">
+                                            <span>Resveratrol Treatment</span>
+                                            <span><strong>2499/-</strong></span>
+                                        </p>
+                                        <strong>(Chosmosuitical Peel)</strong>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-6">
+                        <div class="services-item bg-light border-4 border-end border-primary rounded p-4">
+                            <div class="row align-items-center">
+                                <div class="col-8">
+                                    <div class="services-content text-start">
+                                        <h3>MAKE-UP</h3>
+                                        <p style="display: flex; justify-content: space-between; color: #CFB53B;">
+                                            <span> Party</span>
+                                            <span><strong>1999/-</strong></span>
+                                        </p>
+                                        <p style="display: flex; justify-content: space-between; color: #CFB53B;">
+                                            <span>Saree Draping</span>
+                                            <span><strong>699/-</strong></span>
+                                        </p>
+                                        <p style="display: flex; justify-content: space-between; color: #CFB53B;">
+                                            <span>Hair Styling</span>
+                                            <span><strong> 300/- to 699/-</strong></span>
+                                        </p>
+                                       
+                                        
+                                       
+                                                 
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="services-img d-flex align-items-center justify-content-center rounded">
+                                        <img src="img/makeup.jfif" class="img-fluid rounded" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="services-item bg-light border-4 border-start border-primary rounded p-4">
+                            <div class="row align-items-center">
+                                <div class="col-4">
+                                    <div class="services-img d-flex align-items-center justify-content-center rounded">
+                                        
+                                        <img src="img/engment.jfif" class="img-fluid rounded" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-8">
+                                    <div class="services-content text-start"><h3>ENGAGEMENT MAKE-UP</h3>
+                                        <p style="display: flex; justify-content: space-between; color: #CFB53B;">
+                                            <span> Normal</span>
+                                            <span><strong>2999/-</strong></span>
+                                        </p>
+                                        <p style="display: flex; justify-content: space-between; color: #CFB53B;">
+                                            <span>HD</span>
+                                            <span><strong>/-</strong></span>
+                                        </p>
+                                       
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                   
+                </div>
+                
+            </div>
+        </div>
+        <!-- Services End -->
+
+
+
+        <!-- Footer Start -->
+       
+        <!-- Footer End -->
+
+
+
+        <!-- Copyright Start -->
+        <div class="container-fluid copyright py-4 bg-dark text-light">
+            <div class="container">
+                <div class="row g-4 align-items-center">
+                    <!-- Left Section -->
+                    <div class="col-md-4 text-center text-md-start">
+                        <span>
+                            <a href="#" class="text-light text-decoration-none"></a> Code Crafter Services, Kolhapur
+                        </span>
+                    </div>
+        
+                    <!-- Center Section: Social Icons -->
+                    <div class="col-md-4">
+                        <div class="d-flex justify-content-center">
+                            <a href="#" class="btn btn-light btn-sm-square rounded-circle me-2"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="btn btn-light btn-sm-square rounded-circle me-2"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="btn btn-light btn-sm-square rounded-circle me-2"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="btn btn-light btn-sm-square rounded-circle"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+        
+                    <!-- Right Section -->
+                    <div class="col-md-4 text-center text-md-end">
+                        <small>© 2024 Code Crafter Services. All Rights Reserved.</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Copyright End -->
+
+
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-primary btn-primary-outline-0 btn-md-square rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>   
+
+        
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    </body>
+
+</html>
